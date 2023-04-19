@@ -11,7 +11,7 @@ class SoundManager(private val context: Context) {
     // Ses çalma işlemini gerçekleştiren fonksiyon
     fun playSound(soundFileName: Int) {
         val soundManager = SoundManager(context)
-        val soundResource = R.raw.nota1
+        val soundResource = R.raw.do_note
         soundManager.playSound(soundResource)
 
         mediaPlayer.apply {
