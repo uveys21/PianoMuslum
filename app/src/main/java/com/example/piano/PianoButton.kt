@@ -4,14 +4,11 @@ import android.content.Context
 import android.media.MediaPlayer
 import android.util.AttributeSet
 import android.view.MotionEvent
-import android.widget.Button
 import androidx.appcompat.widget.AppCompatButton
 
 class PianoButton @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : AppCompatButton(context, attrs, defStyleAttr) {
-    var soundFileName: String = ""
-    var button: Button? = null
 
     private var soundResource: Int = 0
 

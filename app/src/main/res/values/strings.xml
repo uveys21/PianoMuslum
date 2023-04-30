@@ -2,5 +2,7 @@
     <string name="app_name">Piano</string>
     <string name="do_button_text">DO</string>
     <string name="re_button_text">RE</string>
-
+    <string name="music1">muzik1</string>
+    <string name="music2">muzik2</string>
+    <string name="muzik_button">Müzikler</string>
 </resources>

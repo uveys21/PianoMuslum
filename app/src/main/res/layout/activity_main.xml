@@ -1,12 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" android:id="@+id/Liste">
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
 
         <Button
                 android:id="@+id/button1"
@@ -14,7 +14,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="DO"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button2"
@@ -22,7 +23,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="RE"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button3"
@@ -30,7 +32,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="Mİ"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button4"
@@ -39,7 +42,8 @@
                 android:layout_weight="1"
                 android:text="FA"
                 android:rotation="360"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button5"
@@ -48,7 +52,8 @@
                 android:layout_weight="1"
                 android:text="SOL"
                 android:rotation="360"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button6"
@@ -56,7 +61,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="LA"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button7"
@@ -64,7 +70,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="Sİ"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
                 android:id="@+id/button8"
@@ -72,8 +79,67 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="DO"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:onClick="onPlayButtonClicked"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:onClick="onPauseButtonClicked"
+                android:text="Pause" />
+
+            <Button
+                android:id="@+id/muzik_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/muzik_button" />
+
+
+        </RelativeLayout>
+
+
+        <SeekBar
+            android:id="@+id/music_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttons_layout"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="54dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgress="0"
+            android:secondaryProgressTint="@color/colorAccent"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbTint="@color/colorPrimary"
+            android:thumbTintMode="src_in" />
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
